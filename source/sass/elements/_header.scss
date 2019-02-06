@@ -1,0 +1,8 @@
+
+.is-top-hat {
+	
+	.logo {
+		@extend .is-height-8;
+		@extend .is-margin-top-3;
+	}
+}

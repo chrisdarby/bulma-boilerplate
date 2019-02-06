@@ -1,0 +1,49 @@
+.list-reset {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+
+	li {
+		list-style-type: none;
+		padding: 0px;
+		margin: 0px;
+	}
+}
+
+.list-inline {
+	@extend .list-reset;
+
+	li {
+		display: inline-block;
+	}
+}
+
+section {
+	&.section {
+		
+	}
+}
+
+.leading-none {
+	line-height: 1;
+}
+
+.leading-tight {
+	line-height: 1.25;
+}
+
+.leading-normal {
+	line-height: 1.5;
+}
+
+.leading-loose {
+	line-height: 2;
+}
+
+.seperated {
+    background-color: #f1f1f1;
+    border: none;
+    display: block;
+    height: 1px;
+    margin: 1.5rem 0;
+}

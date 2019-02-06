@@ -1,0 +1,25 @@
+/**
+ * Heights
+ */
+@each $current-height in $height-list {
+	$i: index($height-list, $current-height);
+
+	// Heights
+	.is-height-#{$current-height} {
+		height: nth($height-vars,$i);
+	}
+
+}
+
+/**
+ * Widths
+ */
+@each $current-width in $width-list {
+	$i: index($width-list, $current-width);
+
+	// Width
+	.is-width-#{$current-width} {
+		width: nth($width-vars,$i);
+	}
+
+}

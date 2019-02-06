@@ -1,0 +1,6 @@
+.is-search {
+	input[type="text"] {
+		@extend .is-padding-3;
+		@extend .is-margin-vertical-1;
+	}
+}

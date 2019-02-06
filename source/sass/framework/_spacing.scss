@@ -1,0 +1,148 @@
+@each $current-standard in $standard-list {
+	$i: index($standard-list, $current-standard);
+
+	.is-block-margin-#{$current-standard} {
+		margin-top: nth($standard-vars,$i);
+		margin-bottom: nth($standard-vars,$i);
+
+		@media screen and (max-width: $tablet) {
+			margin-top: calc(nth($standard-vars,$i) / 2);
+			margin-bottom: calc(nth($standard-vars,$i) / 2);
+		}
+	}
+
+	.is-block-padding-#{$current-standard} {
+		padding-top: nth($standard-vars,$i);
+		padding-bottom: nth($standard-vars,$i);
+
+		@media screen and (max-width: $tablet) {
+			padding-top: calc(nth($standard-vars,$i) / 2);
+			padding-bottom: calc(nth($standard-vars,$i) / 2);
+		}
+	}
+
+}
+
+@each $current-space in $spacing-list {
+	$i: index($spacing-list, $current-space);
+
+	// Margins
+	.is-margin-#{$current-space} {
+		margin: nth($spacing-vars,$i);
+	}
+
+	.is-margin-vertical-#{$current-space} {
+		margin-top: nth($spacing-vars,$i);
+		margin-bottom: nth($spacing-vars,$i);
+	}
+
+	.is-margin-horizontal-#{$current-space}{
+		margin-left: nth($spacing-vars,$i);
+		margin-right: nth($spacing-vars,$i);
+	}
+
+	.is-margin-top-#{$current-space} {
+		margin-top: nth($spacing-vars,$i);
+	}
+
+	.is-margin-bottom-#{$current-space} {
+		margin-bottom: nth($spacing-vars,$i);
+	}
+
+	.is-margin-left-#{$current-space} {
+		margin-left: nth($spacing-vars,$i);
+	}
+
+	.is-margin-right-#{$current-space} {
+		margin-right: nth($spacing-vars,$i);
+	}
+
+	@each $current-breakpoint in $breakpoints-types {
+		$b: index($breakpoints-types, $current-breakpoint);
+
+		@media screen and (max-width: nth($breakpoints,$b)) {
+			.\$current-breakpoint\:is-margin-#{$current-space} {
+				margin: nth($spacing-vars,$i);
+			}
+
+			.\$current-breakpoint\:is-margin-vertical-#{$current-space} {
+				margin-top: nth($spacing-vars,$i);
+				margin-bottom: nth($spacing-vars,$i);
+			}
+
+			.\$current-breakpoint\:is-margin-horizontal-#{$current-space}{
+				margin-left: nth($spacing-vars,$i);
+				margin-right: nth($spacing-vars,$i);
+			}
+
+			.\$current-breakpoint\:.is-margin-top-#{$current-space} {
+				margin-top: nth($spacing-vars,$i);
+			}
+
+			.\$current-breakpoint\:is-margin-bottom-#{$current-space} {
+				margin-bottom: nth($spacing-vars,$i);
+			}
+
+			.\$current-breakpoint\:is-margin-left-#{$current-space} {
+				margin-left: nth($spacing-vars,$i);
+			}
+
+			.\$current-breakpoint\:is-margin-right-#{$current-space} {
+				margin-right: nth($spacing-vars,$i);
+			}
+		}
+	}
+
+
+
+
+
+	// Negative Margins
+	.is-negative-margin-top-#{$current-space} {
+		margin-top: nth($negative-spacing-vars,$i);
+	}
+
+	.is-negative-margin-bottom-#{$current-space} {
+		margin-bottom: nth($negative-spacing-vars,$i);
+	}
+
+	.is-negative-margin-left-#{$current-space} {
+		margin-left: nth($negative-spacing-vars,$i);
+	}
+
+	.is-negative-margin-right-#{$current-space} {
+		margin-right: nth($negative-spacing-vars,$i);
+	}
+
+	// Paddings
+	.is-padding-#{$current-space} {
+		padding: nth($spacing-vars,$i);
+	}
+
+	.is-padding-vertical-#{$current-space} {
+		padding-top: nth($spacing-vars,$i);
+		padding-bottom: nth($spacing-vars,$i);
+	}
+
+	.is-padding-horizontal-#{$current-space} {
+		padding-left: nth($spacing-vars,$i);
+		padding-right: nth($spacing-vars,$i);
+	}
+
+	.is-padding-top-#{$current-space} {
+		padding-top: nth($spacing-vars,$i);
+	}
+
+	.is-padding-bottom-#{$current-space} {
+		padding-bottom: nth($spacing-vars,$i);
+	}
+
+	.is-padding-left-#{$current-space} {
+		padding-left: nth($spacing-vars,$i);
+	}
+
+	.is-padding-right-#{$current-space} {
+		padding-right: nth($spacing-vars,$i);
+	}
+
+}

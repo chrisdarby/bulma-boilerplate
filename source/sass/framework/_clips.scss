@@ -1,0 +1,111 @@
+/* Bottom Right */
+.is-clip-bottom-right-sm {
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+
+.is-clip-bottom-right-md {
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%);
+}
+
+.is-clip-bottom-right-lg {
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 35%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 35%, 0% 100%);
+}
+
+/* Bottom Left */
+.is-clip-bottom-left-sm {
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+
+.is-clip-bottom-left-md {
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%);
+}
+
+.is-clip-bottom-left-md {
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 35%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 35%, 0% 100%);
+}
+
+/* Top Right */
+.is-clip-top-right-sm {
+	-webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+}
+
+.is-clip-top-right-md {
+	-webkit-clip-path: polygon(0 0, 100% 35%, 100% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 35%, 100% 100%, 0% 100%);
+}
+
+.is-clip-top-right-lg {
+	-webkit-clip-path: polygon(0 0, 100% 65%, 100% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 65%, 100% 100%, 0% 100%);
+}
+
+
+/* Top Left */
+.is-clip-top-right-sm {
+	-webkit-clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
+	clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.is-clip-top-right-md {
+	-webkit-clip-path: polygon(0 35%, 100% 0%, 100% 100%, 0% 100%);
+	clip-path: polygon(0 35%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.is-clip-top-right-lg {
+	-webkit-clip-path: polygon(0 65%, 100% 0%, 100% 100%, 0% 100%);
+	clip-path: polygon(0 65%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+
+/* Taper To Right */
+
+.is-clip-taper-to-right-sm {
+	-webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+	clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+}
+
+.is-clip-taper-to-right-md {
+	-webkit-clip-path: polygon(0 35%, 100% 0, 100% 100%, 0 65%);
+	clip-path: polygon(0 35%, 100% 0, 100% 100%, 0 65%);
+}
+
+.is-clip-taper-to-right-offset-top {
+	-webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 55%);
+	clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 55%);
+}
+
+.is-clip-taper-to-right-offset-bottom {
+	-webkit-clip-path: polygon(0 55%, 100% 0, 100% 100%, 0 85%);
+	clip-path: polygon(0 55%, 100% 0, 100% 100%, 0 85%);
+}
+
+
+
+/* Taper To Left */
+
+.is-clip-taper-to-left-sm {
+	-webkit-clip-path: polygon(0 0%, 100% 15%, 100% 85%, 0 100%);
+	clip-path: polygon(0 0%, 100% 15%, 100% 85%, 0 100%);
+}
+
+.is-clip-taper-to-left-md {
+	-webkit-clip-path: polygon(0 0%, 100% 35%, 100% 65%, 0 100%);
+	clip-path: polygon(0 0%, 100% 35%, 100% 65%, 0 100%);
+}
+
+.is-clip-taper-to-left-offset-top {
+	-webkit-clip-path: polygon(0 0%, 100% 15%, 100% 55%, 0 100%);
+	clip-path: polygon(0 0%, 100% 15%, 100% 55%, 0 100%);
+}
+
+.is-clip-taper-to-left-offset-bottom {
+	-webkit-clip-path: polygon(0 0%, 100% 55%, 100% 85%, 0 100%);
+	clip-path: polygon(0 0%, 100% 55%, 100% 85%, 0 100%);
+}

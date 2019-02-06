@@ -1,0 +1,210 @@
+
+.is-top-hat {
+	nav {
+		a {
+			display: inline-block;
+			@extend .is-margin-right-2;
+		}
+
+		&.has-text-right {
+			a {
+				&:last-child {
+					@extend .is-margin-right-0;
+				}
+			}
+		}
+	}
+}
+
+
+.is-top-control {
+	display: inline-block;
+
+	a {
+		display: inline-block;
+		padding: 0.75rem 1rem;
+		float: left;
+
+		span {
+			display: inline-block;
+		}
+
+		i {
+			display: inline-block;
+			padding-left: 1rem;
+		}
+	}
+}
+
+@media only screen and (max-width: 959px) {
+	body {
+		&.has-nav-fixed {
+			margin-top: 36px;
+		}
+	}
+
+    .is-nav-fixed {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        color: #ffffff;
+        z-index: 1000;
+        height: auto;
+        overflow-y: scroll;
+
+        .is-nav-menu-bg {
+            position: absolute;
+            background-color: #333333;
+            width: 100%;
+            height: 2.4rem;
+            padding: 8px 0px;
+        }
+    }
+
+    .is-nav-mobile {
+        margin-right: 24px;
+    }
+
+    .is-nav-container {
+        margin-left: -24px;
+        margin-right: -24px;
+    }
+}
+
+.is-nav-menu {
+	margin-top: 1.5rem;
+
+    @media only screen and (max-width: 959px) {
+    	margin-top: 0rem;
+
+        .is-nav-mobile {
+            display: block;
+            cursor: pointer;
+        }
+
+        .is-nav-top-level {
+            display: none;
+            background-color: $nav-mobile-bg;
+            margin: 0px 0px;
+
+            a {
+                color: $nav-a-color-mobile;
+                display: block;
+                padding-top: $nav-padding-vertical-mobile;
+                padding-bottom: $nav-padding-vertical-mobile;
+                padding-left: $nav-padding-horizontal;
+
+                &:hover {
+                    background-color: #666666;
+                }
+            }
+
+            &> li {
+                padding: 0 $nav-padding-horizontal;
+                list-style-type: none;
+
+                &> ul {
+                    display: block;
+                    list-style-type: none;
+
+                    &> li {
+                        padding: 0 0;
+                        list-style-type: none;
+
+                        &> ul {
+                            display: block;
+                            list-style-type: none;
+
+                            &> li {
+                                padding: 0 0;
+                                list-style-type: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media only screen and (min-width: 959px) {
+        background-color: $nav-top-level-bg;
+
+        .is-nav-mobile {
+            display: none;
+        }
+
+        .is-nav-top-level {
+            position: relative;
+            z-index: 1000;
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+
+            a {
+                color: $nav-a-color;
+                display: block;
+            }
+
+            &> li {
+                display: inline-block;
+                padding: $nav-padding-vertical $nav-padding-horizontal;
+                background-color: $nav-top-level-bg;
+
+                &> ul {
+                    display: none;
+                    position: absolute;
+                    padding: 0rem;
+                    background-color: $nav-second-level-bg;
+                    z-index: 1000;
+                    margin-top: 0.5rem;
+                    margin-left: $nav-margin-offset;
+                    width: 15rem;
+		            list-style-type: none;
+
+                    &> li {
+                        padding: $nav-padding-vertical $nav-padding-horizontal;
+
+                        &> ul {
+                            display: none;
+                            position: absolute;
+                            padding: 0rem;
+                            background-color: $nav-third-level-bg;
+                            z-index: 1000;
+                            margin-left: 0px;
+                            margin-top: $nav-vertical-offset;
+                            left: 100%;
+                            width: 120%;
+				            list-style-type: none;
+
+                            &> li {
+                                padding: $nav-padding-vertical $nav-padding-horizontal;
+
+                                &:hover {
+                                    background-color: $nav-third-level-hover-bg;
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            background-color: $nav-third-level-bg;
+
+                            &> ul {
+                                display: block;
+                            }
+                        }
+
+                    }
+                }
+
+                &:hover {
+
+                    background-color: $nav-second-level-bg;
+                    &> ul {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
